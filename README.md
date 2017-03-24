@@ -1,5 +1,7 @@
 # SlidingTabLayout for ViewPager
-SlidingTabLayout is a library that allows you to create a indicator of viewpager with 3 style.
+SlidingTabLayout is a library that allows you to create a tab of viewpager with 2 style: 
+- SlidingTab
+- Tab Normal
 
   ![demo](ScreenShots/1.gif)
   
@@ -58,23 +60,47 @@ dependencies {
 
 # Basic Usage
 
-#### IndicatorView XML
+#### SlidingTabLayout XML
 
-To use this IndicatorView in your layout simply copy and paste the xml below. This provides the default indicator. 
+To use this SlidingTabLayout in your layout simply copy and paste the xml below. This provides the default indicator. 
 
+1. With TabLayout:
 ```xml
-<com.athbk.indicatorview.IndicatorView
+<com.athbk.slidingtablayout.TabLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:layout_marginBottom="30dp"
-        android:id="@+id/indicator"
-	app:indi_color_selected="#ffffff"
-	app:indi_color_unselected="#40ffffff"/>
+        android:id="@+id/tabLayout"
+        android:background="@color/colorGray"
+        app:tab_text_color="@color/tab_color_seleted"
+/>
+````
+2. With SlidingTabLayout:
+```xml
+<com.athbk.slidingtablayout.SlidingTabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tabLayout"
+        android:background="@color/colorGray"
+	/>
 ```
-#### Indicator Attr 
+#### SlidingTabLayout Attr 
 
-There are several other attributes that can be used to configure color selected and unselected of indicator.
+There are several other attributes that can be used to configure color text, icon, background tab, size.
+1.  With TabLayout:
+
+
+| Attrrs        |               |
+| ------------- |:-------------:|
+| col 3 is      | right-aligned |
+| col 2 is      | centered      |
+| zebra stripes | are neat      |
+
+```xml
+ 	....
+	app:indi_color_selected="#ffffff"
+	app:indi_color_unselected="#40ffffff"
+```
+2. With SlidingTabLayout:
 
 ```xml
  	....
