@@ -89,11 +89,18 @@ There are several other attributes that can be used to configure color text, ico
 1.  With TabLayout:
 
 
-| Attrrs        |               |
-| ------------- |:-------------:|
-| col 3 is      | right-aligned |
-| col 2 is      | centered      |
-| zebra stripes | are neat      |
+| Attrrs                 |                        |  type   |
+| -----------------------|:----------------------:|---------|
+| tab_text_size          | size of text           |dimension|
+| tab_text_color         | color of text          |reference|
+| tab_under_line_color   | color of under line    |color    |
+| tab_under_line_visible | visible of under line  |boolean  |
+| tab_auto_align         | auto align width size  |boolean  |
+| tab_padding_left       | padding left           |dimension|
+| tab_padding_right      | padding right          |dimension|
+| tab_padding_top        | padding top            |dimension|
+| tab_padding_bottom     | padidng bottom         |dimension|
+| tab_background         | customer background tab|reference|
 
 ```xml
  	....
