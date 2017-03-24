@@ -1,10 +1,10 @@
 # SlidingTabLayout for ViewPager
 SlidingTabLayout is a library that allows you to create a indicator of viewpager with 3 style.
 
-  ![demo](ScreenShots/Mar-24-2017 16-13-32.gif)
-  ![demo](ScreenShots/Mar-24-2017 16-37-21.gif)
-  ![demo](ScreenShots/Screen Shot 2017-03-24_1.png)
-  ![demo](ScreenShots/Screen Shot 2017-03-24_2.png)
+  ![demo](ScreenShots/1.gif)
+  ![demo](ScreenShots/2.gif)
+  ![demo](ScreenShots/2017-03-24_1.png)
+  ![demo](ScreenShots/2017-03-24_2.png)
 ---
 
 
