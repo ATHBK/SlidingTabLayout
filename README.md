@@ -18,14 +18,14 @@ SlidingTabLayout is a library that allows you to create a tab of viewpager with 
 
 # Table of Contents
 
-1. [Gradle Dependency](https://github.com/ATHBK/IndicatorView#gradle-dependency)
-   1. [Repository](https://github.com/ATHBK/IndicatorView#repository)
-   2. [Dependency](https://github.com/ATHBK/IndicatorView#dependency)
-2. [Basic Usage](https://github.com/ATHBK/IndicatorView#basic-usage)
-   1. [IndicatorView XML](https://github.com/ATHBK/IndicatorView#indicatorview-xml)
-   2. [Attributes](https://github.com/ATHBK/IndicatorView#indicator-attr )
-3. [Init Java](https://github.com/ATHBK/IndicatorView#init-from-java)
-4. [License](https://github.com/ATHBK/IndicatorView#license)
+1. [Gradle Dependency](https://github.com/ATHBK/SlidingTabLayout#gradle-dependency)
+   1. [Repository](https://github.com/ATHBK/SlidingTabLayout#repository)
+   2. [Dependency](https://github.com/ATHBK/SlidingTabLayout#dependency)
+2. [Basic Usage](https://github.com/ATHBK/SlidingTabLayout#basic-usage)
+   1. [IndicatorView XML](https://github.com/ATHBK/SlidingTabLayout#slidingtablayout-xml)
+   2. [Attributes](https://github.com/ATHBK/SlidingTabLayout#slidingtablayout-attr )
+3. [Init Java](https://github.com/ATHBK/SlidingTabLayout#init-from-java)
+4. [License](https://github.com/ATHBK/SlidingTabLayout#license)
 
    
 ---
@@ -88,7 +88,6 @@ To use this SlidingTabLayout in your layout simply copy and paste the xml below.
 There are several other attributes that can be used to configure color text, icon, background tab, size.
 1.  With TabLayout:
 
-
 | Attrrs                 |                        |  type   |
 | -----------------------|:----------------------:|---------|
 | tab_text_size          | size of text           |dimension|
@@ -102,18 +101,22 @@ There are several other attributes that can be used to configure color text, ico
 | tab_padding_bottom     | padidng bottom         |dimension|
 | tab_background         | customer background tab|reference|
 
-```xml
- 	....
-	app:indi_color_selected="#ffffff"
-	app:indi_color_unselected="#40ffffff"
-```
+
 2. With SlidingTabLayout:
 
-```xml
- 	....
-	app:indi_color_selected="#ffffff"
-	app:indi_color_unselected="#40ffffff"
-```
+| Attrrs                    |                        |  type   |
+| --------------------------|:----------------------:|---------|
+| sl_tab_text_size          | size of text           |dimension|
+| sl_tab_text_color         | color of text          |reference|
+| sl_tab_under_line_color   | color of under line    |color    |
+| sl_tab_under_line_visible | visible of under line  |boolean  |
+| sl_tab_size_width         | size width of tab      |dimension|
+| sl_tab_padding_left       | padding left           |dimension|
+| sl_tab_padding_right      | padding right          |dimension|
+| sl_tab_padding_top        | padding top            |dimension|
+| sl_tab_padding_bottom     | padidng bottom         |dimension|
+| sl_tab_background         | customer background tab|reference|
+
 ---
 
 # Init from Java
@@ -123,26 +126,17 @@ There are several other attributes that can be used to configure color text, ico
 How to use in . 
 
 ```java	
-	ViewPagerAdapter adapter = new ViewPagerAdapter(6);
+	ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager(), listFragment, listTab);
         viewPager.setAdapter(adapter);
-        indicator.setType(StyleIndicator.CIRCLE_STYLE_2);
-        indicator.setViewPager(viewPager);
+        tabLayout.setViewPager(viewPager, adapter);
 ```
-** Note: You must declare type first, then setViewPager.
 
-** 3 style in class StyleIndicator.
+** Note: Adapter must extends SlidingTabAdapter
 
-- StyleIndicator.CIRCLE_STYLE_1
-- StyleIndicator.CIRCLE_STYLE_2
-- StyleIndicator.SHAPE
+- If title is empty, tab will show only icon
+- If icon is empty, tab will show only title
+- If title and icon is'nt empty, tab will show both.
 
-** Update v1.1.1: change size of type shape
-```java
-	indicator.setType(StyleIndicator.SHAPE);
-        indicator.setHeightShape(16);
-        indicator.setWidthShape(50);
-        indicator.setViewPager(viewPager);
-```
 ---
 # License
 
