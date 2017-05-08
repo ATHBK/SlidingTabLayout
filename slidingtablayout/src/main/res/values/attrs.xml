@@ -20,6 +20,16 @@
             <enum name="horizontal" value="1"/>
         </attr>
 
+        <attr name="tab_scale_type" format="enum">
+            <enum name="matrix" value="0"/>
+            <enum name="fitXY" value="1"/>
+            <enum name="fit_start" value="2"/>
+            <enum name="fit_center" value="3"/>
+            <enum name="fit_end" value="4"/>
+            <enum name="center" value="5"/>
+            <enum name="center_crop" value="6"/>
+            <enum name="center_inside" value="7"/>
+        </attr>
     </declare-styleable>
 
     <declare-styleable name="SlidingTabLayout">

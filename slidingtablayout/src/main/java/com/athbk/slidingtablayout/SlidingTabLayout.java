@@ -264,7 +264,6 @@ public class SlidingTabLayout extends HorizontalScrollView implements ViewPager.
 
         Drawable myIcon = getResources().getDrawable(icon);
         imageView.setImageDrawable(myIcon);
-
 //        imageView.setImageResource(icon);
         imageView.setOnClickListener(new OnClickListener() {
             @Override

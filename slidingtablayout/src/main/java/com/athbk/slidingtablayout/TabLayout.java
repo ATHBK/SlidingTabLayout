@@ -54,6 +54,7 @@ public class TabLayout extends LinearLayout implements ViewPager.OnPageChangeLis
     private float currentPositionOffset;
 
     private int tabOrientation;
+    private int scaleTypeImageIcon;
 
     public TabLayout(Context context) {
         super(context);
@@ -128,6 +129,7 @@ public class TabLayout extends LinearLayout implements ViewPager.OnPageChangeLis
         paddingBottom = typedArray.getDimension(R.styleable.TabLayout_tab_padding_bottom, DEFAULT_PADDING);
         resBackground = typedArray.getResourceId(R.styleable.TabLayout_tab_background, 0);
         tabOrientation = typedArray.getInt(R.styleable.TabLayout_tab_orientation, 1);
+        scaleTypeImageIcon = typedArray.getInt(R.styleable.TabLayout_tab_scale_type, -1);
         typedArray.recycle();
 
         mUnderLinePaint = new Paint(Paint.ANTI_ALIAS_FLAG);
@@ -240,6 +242,30 @@ public class TabLayout extends LinearLayout implements ViewPager.OnPageChangeLis
         imageView.setPadding((int)paddingLeft, (int)paddingTop, (int)paddingRight, (int)paddingBottom);
         imageView.setLayoutParams(layoutParams);
         imageView.setImageResource(icon);
+        if (scaleTypeImageIcon == 0){
+            imageView.setScaleType(ImageView.ScaleType.MATRIX);
+        }
+        else if (scaleTypeImageIcon == 1){
+            imageView.setScaleType(ImageView.ScaleType.FIT_XY);
+        }
+        else if (scaleTypeImageIcon == 2){
+            imageView.setScaleType(ImageView.ScaleType.FIT_START);
+        }
+        else if (scaleTypeImageIcon == 3){
+            imageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
+        }
+        else if (scaleTypeImageIcon == 4){
+            imageView.setScaleType(ImageView.ScaleType.FIT_END);
+        }
+        else if (scaleTypeImageIcon == 5){
+            imageView.setScaleType(ImageView.ScaleType.CENTER);
+        }
+        else if (scaleTypeImageIcon == 6){
+            imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
+        }
+        else if (scaleTypeImageIcon == 7){
+            imageView.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
+        }
         imageView.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
