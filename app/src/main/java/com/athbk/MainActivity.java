@@ -28,9 +28,9 @@ public class MainActivity extends AppCompatActivity {
 
 
         ArrayList<TabInfo> listTab = new ArrayList<>();
-        TabInfo tabInfo1 = new TabInfo("TAB 1");
-        TabInfo tabInfo2 = new TabInfo("TAB 2");
-        TabInfo tabInfo3 = new TabInfo("TAB 3");
+        TabInfo tabInfo1 = new TabInfo("");
+        TabInfo tabInfo2 = new TabInfo("");
+        TabInfo tabInfo3 = new TabInfo("");
 //        TabInfo tabInfo4 = new TabInfo("TAB 4");
 //        TabInfo tabInfo5 = new TabInfo("TAB 5");
 //        TabInfo tabInfo6 = new TabInfo("TAB 6");
