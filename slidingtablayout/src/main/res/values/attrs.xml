@@ -6,12 +6,20 @@
         <attr name="tab_under_line_color" format="color"/>
         <attr name="tab_under_line_visible" format="boolean"/>
         <attr name="tab_auto_align" format="boolean"/>
-        <attr name="tab_size_width" format="dimension"/>
         <attr name="tab_padding_left" format="dimension"/>
         <attr name="tab_padding_right" format="dimension"/>
         <attr name="tab_padding_top" format="dimension"/>
         <attr name="tab_padding_bottom" format="dimension"/>
         <attr name="tab_background" format="reference"/>
+        <!--
+            HORIZONTAL
+            VERTICAL
+        -->
+        <attr name="tab_orientation" format="enum">
+            <enum name="vertical" value="0"/>
+            <enum name="horizontal" value="1"/>
+        </attr>
+
     </declare-styleable>
 
     <declare-styleable name="SlidingTabLayout">
@@ -25,5 +33,13 @@
         <attr name="sl_tab_padding_top" format="dimension"/>
         <attr name="sl_tab_padding_bottom" format="dimension"/>
         <attr name="sl_tab_background" format="reference"/>
+        <!--
+            HORIZONTAL
+            VERTICAL
+        -->
+        <attr name="sl_orientation" format="enum">
+            <enum name="vertical" value="0"/>
+            <enum name="horizontal" value="1"/>
+        </attr>
     </declare-styleable>
 </resources>

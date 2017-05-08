@@ -58,6 +58,8 @@ public class SlidingTabLayout extends HorizontalScrollView implements ViewPager.
 
     private LinearLayout tabLayout;
 //    private LinearLayout parentlayout;
+    private int tabOrientation;
+
 
     public SlidingTabLayout(Context context) {
         super(context);
@@ -147,6 +149,7 @@ public class SlidingTabLayout extends HorizontalScrollView implements ViewPager.
         paddingTop = typedArray.getDimension(R.styleable.SlidingTabLayout_sl_tab_padding_top, DEFAULT_PADDING);
         paddingBottom = typedArray.getDimension(R.styleable.SlidingTabLayout_sl_tab_padding_bottom, DEFAULT_PADDING);
         resBackground = typedArray.getResourceId(R.styleable.SlidingTabLayout_sl_tab_background, 0);
+        tabOrientation = typedArray.getInt(R.styleable.SlidingTabLayout_sl_orientation, 1);
 
         typedArray.recycle();
 
@@ -154,13 +157,19 @@ public class SlidingTabLayout extends HorizontalScrollView implements ViewPager.
         mUnderLinePaint.setColor(colorUnderLiner);
 
         this.setFillViewport(true);
-
         LinearLayout.LayoutParams parentParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+
+        if (tabOrientation == 0) {
+            parentParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.MATCH_PARENT);
+        }
 //        parentlayout = new LinearLayout(context);
 //        parentlayout.setOrientation(LinearLayout.VERTICAL);
 
         tabLayout = new LinearLayout(context);
         tabLayout.setOrientation(LinearLayout.HORIZONTAL);
+        if (tabOrientation == 0){
+            tabLayout.setOrientation(LinearLayout.VERTICAL);
+        }
         tabLayout.setLayoutParams(parentParams);
 
 //        parentlayout.addView(tabLayout);
@@ -174,6 +183,7 @@ public class SlidingTabLayout extends HorizontalScrollView implements ViewPager.
         this.addView(tabLayout);
         setLayoutParams(parentParams);
         setHorizontalScrollBarEnabled(false);
+
         setWillNotDraw(false);
     }
 

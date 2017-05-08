@@ -53,6 +53,8 @@ public class TabLayout extends LinearLayout implements ViewPager.OnPageChangeLis
     private int afterPosition;
     private float currentPositionOffset;
 
+    private int tabOrientation;
+
     public TabLayout(Context context) {
         super(context);
         this.context = context;
@@ -125,11 +127,18 @@ public class TabLayout extends LinearLayout implements ViewPager.OnPageChangeLis
         paddingTop = typedArray.getDimension(R.styleable.TabLayout_tab_padding_top, DEFAULT_PADDING);
         paddingBottom = typedArray.getDimension(R.styleable.TabLayout_tab_padding_bottom, DEFAULT_PADDING);
         resBackground = typedArray.getResourceId(R.styleable.TabLayout_tab_background, 0);
-
+        tabOrientation = typedArray.getInt(R.styleable.TabLayout_tab_orientation, 1);
         typedArray.recycle();
 
         mUnderLinePaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         mUnderLinePaint.setColor(colorUnderLiner);
+        if (tabOrientation == 1){
+            setOrientation(HORIZONTAL);
+        }
+        else {
+            isVisibleUnderLiner = false;
+            setOrientation(VERTICAL);
+        }
 
         setWillNotDraw(false);
     }
@@ -139,12 +148,18 @@ public class TabLayout extends LinearLayout implements ViewPager.OnPageChangeLis
         this.adapter = slidingTabAdapter;
         this.viewPager.addOnPageChangeListener(this);
 
-        LinearLayout.LayoutParams parentParams = new LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-        setLayoutParams(parentParams);
+
+
+//        LinearLayout.LayoutParams parentParams = new LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+//        setLayoutParams(parentParams);
+
         int count = slidingTabAdapter.getCount();
         if (count <= 0) return;
         int padding = (int) DeviceDimensionsHelper.convertDpToPixel(DEFAULT_PADDING, context);
         ViewGroup.LayoutParams layoutParams = new LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1.0f);
+        if (tabOrientation == 0){
+            layoutParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, 0, 1.0f);
+        }
         if (!isAutoAlign){
             layoutParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         }
