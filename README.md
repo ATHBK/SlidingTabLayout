@@ -100,9 +100,7 @@ There are several other attributes that can be used to configure color text, ico
 | tab_padding_top        | padding top            |dimension|
 | tab_padding_bottom     | padidng bottom         |dimension|
 | tab_background         | customer background tab|reference|
-
-update v1.1:
-
+|update v1.1:                                               |
 |tab_orientation	 | vertical or horizontal |enum     |
 
 2. With SlidingTabLayout:
@@ -119,9 +117,7 @@ update v1.1:
 | sl_tab_padding_top        | padding top            |dimension|
 | sl_tab_padding_bottom     | padidng bottom         |dimension|
 | sl_tab_background         | customer background tab|reference|
-
-update v1.1:
-
+|update v1.1:                                                  |
 |sl_orientation	            | vertical or horizontal |   enum  |
 
 ---
