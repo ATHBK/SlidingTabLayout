@@ -118,7 +118,7 @@ public class TabLayout extends LinearLayout implements ViewPager.OnPageChangeLis
 
     private void init(Context context, AttributeSet attrs, int def){
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.TabLayout, def, 0);
-        textColorNormal = typedArray.getResourceId(R.styleable.TabLayout_tab_text_color, 0);
+        textColorNormal = typedArray.getResourceId(R.styleable.TabLayout_tab_text_color, R.color.tab_color_selected_default);
         textSize = typedArray.getDimension(R.styleable.TabLayout_tab_text_size, DEFAULT_SIZE);
         colorUnderLiner = typedArray.getColor(R.styleable.TabLayout_tab_under_line_color, DEFAULT_COLOR_UNDER_LINE);
         isVisibleUnderLiner = typedArray.getBoolean(R.styleable.TabLayout_tab_under_line_visible, DEFAULT_VISIBLE_UNDER_LINE);

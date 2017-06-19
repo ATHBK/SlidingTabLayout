@@ -139,7 +139,7 @@ public class SlidingTabLayout extends HorizontalScrollView implements ViewPager.
 
     private void init(Context context, AttributeSet attrs, int def) {
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.SlidingTabLayout, def, 0);
-        textColorNormal = typedArray.getResourceId(R.styleable.SlidingTabLayout_sl_tab_text_color, DEFAULT_COLOR_NORMAL);
+        textColorNormal = typedArray.getResourceId(R.styleable.SlidingTabLayout_sl_tab_text_color, R.color.tab_color_selected_default);
         textSize = typedArray.getDimension(R.styleable.SlidingTabLayout_sl_tab_text_size, DEFAULT_SIZE);
         colorUnderLiner = typedArray.getColor(R.styleable.SlidingTabLayout_sl_tab_under_line_color, DEFAULT_COLOR_UNDER_LINE);
         isVisibleUnderLiner = typedArray.getBoolean(R.styleable.SlidingTabLayout_sl_tab_under_line_visible, DEFAULT_VISIBLE_UNDER_LINE);
