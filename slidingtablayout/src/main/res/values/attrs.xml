@@ -30,6 +30,13 @@
             <enum name="center_crop" value="6"/>
             <enum name="center_inside" value="7"/>
         </attr>
+
+        <attr name="tab_icon_position" format="enum">
+            <enum name="top" value="0"/>
+            <enum name="bottom" value="1"/>
+            <enum name="left" value="2"/>
+            <enum name="right" value="3"/>
+        </attr>
     </declare-styleable>
 
     <declare-styleable name="SlidingTabLayout">
@@ -50,6 +57,13 @@
         <attr name="sl_orientation" format="enum">
             <enum name="vertical" value="0"/>
             <enum name="horizontal" value="1"/>
+        </attr>
+
+        <attr name="sl_icon_position" format="enum">
+            <enum name="top" value="0"/>
+            <enum name="bottom" value="1"/>
+            <enum name="left" value="2"/>
+            <enum name="right" value="3"/>
         </attr>
     </declare-styleable>
 </resources>

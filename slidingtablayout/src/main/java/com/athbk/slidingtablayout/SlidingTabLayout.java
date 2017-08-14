@@ -59,7 +59,7 @@ public class SlidingTabLayout extends HorizontalScrollView implements ViewPager.
     private LinearLayout tabLayout;
 //    private LinearLayout parentlayout;
     private int tabOrientation;
-
+    private int iconPosition;
 
     public SlidingTabLayout(Context context) {
         super(context);
@@ -150,7 +150,7 @@ public class SlidingTabLayout extends HorizontalScrollView implements ViewPager.
         paddingBottom = typedArray.getDimension(R.styleable.SlidingTabLayout_sl_tab_padding_bottom, DEFAULT_PADDING);
         resBackground = typedArray.getResourceId(R.styleable.SlidingTabLayout_sl_tab_background, 0);
         tabOrientation = typedArray.getInt(R.styleable.SlidingTabLayout_sl_orientation, 1);
-
+        iconPosition = typedArray.getInt(R.styleable.SlidingTabLayout_sl_icon_position, 0);
         typedArray.recycle();
 
         mUnderLinePaint = new Paint(Paint.ANTI_ALIAS_FLAG);
@@ -241,7 +241,24 @@ public class SlidingTabLayout extends HorizontalScrollView implements ViewPager.
         textView.setLayoutParams(layoutParams);
         textView.setTextSize(textSize);
         textView.setTextColor(getResources().getColorStateList(textColorNormal));
-        textView.setCompoundDrawablesWithIntrinsicBounds(0, icon, 0, 0);
+        switch (iconPosition){
+            case 0:
+                textView.setCompoundDrawablesWithIntrinsicBounds(0, icon, 0, 0);
+                break;
+
+            case 1:
+                textView.setCompoundDrawablesWithIntrinsicBounds(0, 0, 0, icon);
+                break;
+
+            case 2:
+                textView.setCompoundDrawablesWithIntrinsicBounds(icon, 0, 0, 0);
+                break;
+
+            case 3:
+                textView.setCompoundDrawablesWithIntrinsicBounds(0, 0, icon, 0);
+                break;
+
+        }
         textView.setCompoundDrawablePadding(DEFAULT_PADDING_DRAWBLE);
         textView.setGravity(Gravity.CENTER);
         textView.setOnClickListener(new OnClickListener() {

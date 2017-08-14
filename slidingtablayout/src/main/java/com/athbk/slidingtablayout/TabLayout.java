@@ -56,6 +56,8 @@ public class TabLayout extends LinearLayout implements ViewPager.OnPageChangeLis
     private int tabOrientation;
     private int scaleTypeImageIcon;
 
+    private int iconPosition;
+
     public TabLayout(Context context) {
         super(context);
         this.context = context;
@@ -130,6 +132,7 @@ public class TabLayout extends LinearLayout implements ViewPager.OnPageChangeLis
         resBackground = typedArray.getResourceId(R.styleable.TabLayout_tab_background, 0);
         tabOrientation = typedArray.getInt(R.styleable.TabLayout_tab_orientation, 1);
         scaleTypeImageIcon = typedArray.getInt(R.styleable.TabLayout_tab_scale_type, -1);
+        iconPosition = typedArray.getInt(R.styleable.TabLayout_tab_icon_position, 0);
         typedArray.recycle();
 
         mUnderLinePaint = new Paint(Paint.ANTI_ALIAS_FLAG);
@@ -221,7 +224,24 @@ public class TabLayout extends LinearLayout implements ViewPager.OnPageChangeLis
         }
         catch (Exception e){
         }
-        textView.setCompoundDrawablesWithIntrinsicBounds(0, icon, 0, 0);
+        switch (iconPosition){
+            case 0:
+                textView.setCompoundDrawablesWithIntrinsicBounds(0, icon, 0, 0);
+                break;
+
+            case 1:
+                textView.setCompoundDrawablesWithIntrinsicBounds(0, 0, 0, icon);
+                break;
+
+            case 2:
+                textView.setCompoundDrawablesWithIntrinsicBounds(icon, 0, 0, 0);
+                break;
+
+            case 3:
+                textView.setCompoundDrawablesWithIntrinsicBounds(0, 0, icon, 0);
+                break;
+
+        }
         textView.setCompoundDrawablePadding(DEFAULT_PADDING_DRAWBLE);
         textView.setGravity(Gravity.CENTER);
         textView.setOnClickListener(new OnClickListener() {

@@ -3,111 +3,102 @@
 
     <item
         is-multidex="false"
-        jar="/Volumes/Macintosh HDD/Project/Project Android/My Library/SlidingTabLayout/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.3.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="4b746ef0fd46acb5aaf3d9ab9a4cec22c28d3211">
-        <dex dex="/Volumes/Macintosh HDD/Project/Project Android/My Library/SlidingTabLayout/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.3.0_860417608cdc0913378fa9163a7b770b6d2362ef.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Volumes/Macintosh HDD/Project/Project Android/My Library/SlidingTabLayout/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="70f23cb87278f89aa51e6f57e8f0fd5266572d95">
-        <dex dex="/Volumes/Macintosh HDD/Project/Project Android/My Library/SlidingTabLayout/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.3.0_0ec1d3b46064676e201e88a8a862522cfe20793e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Volumes/Macintosh HDD/Project/Project Android/My Library/SlidingTabLayout/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.3.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="93c10d68ab5ea070f15782ae6d3a28d1f1d8f45e">
-        <dex dex="/Volumes/Macintosh HDD/Project/Project Android/My Library/SlidingTabLayout/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.3.0_ff744824952c85f4f6332b66454da9ce7757f490.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/athbk/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.0/support-annotations-25.3.0.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="dd84903d2e1af25a6081ef9038ad863cb14ca3a0">
-        <dex dex="/Volumes/Macintosh HDD/Project/Project Android/My Library/SlidingTabLayout/app/build/intermediates/pre-dexed/debug/support-annotations-25.3.0_4baf5aa7d377d8c2b62559bfab33c5ebf9668a44.jar" />
+        <dex dex="/Volumes/HDD/Project/Project Android/Library/My Lib/SlidingTabLayout/app/build/intermediates/pre-dexed/debug/support-annotations-25.3.0_4baf5aa7d377d8c2b62559bfab33c5ebf9668a44.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Volumes/Macintosh HDD/Project/Project Android/My Library/SlidingTabLayout/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.3.0/jars/classes.jar"
-        jumboMode="true"
+        jar="/Volumes/HDD/Project/Project Android/Library/My Lib/SlidingTabLayout/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.3.0/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="93c1199fcb0a34b980e6fff8350daff62e696ec2">
-        <dex dex="/Volumes/Macintosh HDD/Project/Project Android/My Library/SlidingTabLayout/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.3.0_5979054a41577e723cacf9faccdbcff4167cbc20.jar" />
+        sha1="93c10d68ab5ea070f15782ae6d3a28d1f1d8f45e">
+        <dex dex="/Volumes/HDD/Project/Project Android/Library/My Lib/SlidingTabLayout/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.3.0_262488fc6de5f49543aea3d633e7c3f06dade0f2.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Volumes/Macintosh HDD/Project/Project Android/My Library/SlidingTabLayout/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="88a9f34299f34c473aabc8198ee27f8615fffab9">
-        <dex dex="/Volumes/Macintosh HDD/Project/Project Android/My Library/SlidingTabLayout/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_3df5704bc498190d8a7ad8ed061a6f011aee5606.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Volumes/Macintosh HDD/Project/Project Android/My Library/SlidingTabLayout/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.3.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="5cc5ef8347a6bafa14556cbd35230aa9b3431bb0">
-        <dex dex="/Volumes/Macintosh HDD/Project/Project Android/My Library/SlidingTabLayout/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.3.0_b580baf1824e979b53b30ddbdfc2f46290914ea0.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Volumes/Macintosh HDD/Project/Project Android/My Library/SlidingTabLayout/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.3.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="425c7b17887e5c3f8cbdf67ba171bc246f29b42c">
-        <dex dex="/Volumes/Macintosh HDD/Project/Project Android/My Library/SlidingTabLayout/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.3.0_ac61b2ff9df363192b9a50438949472bf778abb4.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Volumes/Macintosh HDD/Project/Project Android/My Library/SlidingTabLayout/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.3.0/jars/classes.jar"
-        jumboMode="true"
+        jar="/Volumes/HDD/Project/Project Android/Library/My Lib/SlidingTabLayout/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.3.0/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="518768f3200963fbfec652f498da2c9d39245234">
-        <dex dex="/Volumes/Macintosh HDD/Project/Project Android/My Library/SlidingTabLayout/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.3.0_a943528bd22b7f826ba7a9aee65591c8102f92a0.jar" />
+        <dex dex="/Volumes/HDD/Project/Project Android/Library/My Lib/SlidingTabLayout/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.3.0_0bb758de56d66010eb666753ced08fbc2460a4d9.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Volumes/Macintosh HDD/Project/Project Android/My Library/SlidingTabLayout/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
+        jar="/Volumes/HDD/Project/Project Android/Library/My Lib/SlidingTabLayout/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.3.0/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="eade5291b71fc8c4c618da975f9a05cbc57dad0f">
-        <dex dex="/Volumes/Macintosh HDD/Project/Project Android/My Library/SlidingTabLayout/app/build/intermediates/pre-dexed/debug/instant-run_25b97a0f7a64bcb66ab526815caa48084cf8cfe6.jar" />
+        sha1="4b746ef0fd46acb5aaf3d9ab9a4cec22c28d3211">
+        <dex dex="/Volumes/HDD/Project/Project Android/Library/My Lib/SlidingTabLayout/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.3.0_5f54bd6dbf86e9483e61ac7fb93e6043931031be.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Volumes/Macintosh HDD/Project/Project Android/My Library/SlidingTabLayout/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Volumes/Macintosh HDD/Project/Project Android/My Library/SlidingTabLayout/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.3.0_e96aa32ff6a00c0887c7188681e5ecd0f47e3452.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Volumes/Macintosh HDD/Project/Project Android/My Library/SlidingTabLayout/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.3.0/jars/classes.jar"
-        jumboMode="true"
+        jar="/Volumes/HDD/Project/Project Android/Library/My Lib/SlidingTabLayout/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.3.0/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="d6a04527c17597019dad82777c5094a3d60d1c33">
-        <dex dex="/Volumes/Macintosh HDD/Project/Project Android/My Library/SlidingTabLayout/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.3.0_99046744890fa98fc840ff8d12318c1a5d67376b.jar" />
+        <dex dex="/Volumes/HDD/Project/Project Android/Library/My Lib/SlidingTabLayout/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.3.0_05c96b1e27cd1813be0975ea54deef1dbafdf777.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/HDD/Project/Project Android/Library/My Lib/SlidingTabLayout/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Volumes/HDD/Project/Project Android/Library/My Lib/SlidingTabLayout/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.3.0_5764c6fdea4989a5c0f2335019b8d3befbc40901.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/HDD/Project/Project Android/Library/My Lib/SlidingTabLayout/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="425c7b17887e5c3f8cbdf67ba171bc246f29b42c">
+        <dex dex="/Volumes/HDD/Project/Project Android/Library/My Lib/SlidingTabLayout/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.3.0_49c4cbcbb851d242dc96f73579337520520c2864.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/HDD/Project/Project Android/Library/My Lib/SlidingTabLayout/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="93c1199fcb0a34b980e6fff8350daff62e696ec2">
+        <dex dex="/Volumes/HDD/Project/Project Android/Library/My Lib/SlidingTabLayout/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.3.0_d84ec76171368a4ee3eb55c0f4e3b689224039f1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/HDD/Project/Project Android/Library/My Lib/SlidingTabLayout/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="70f23cb87278f89aa51e6f57e8f0fd5266572d95">
+        <dex dex="/Volumes/HDD/Project/Project Android/Library/My Lib/SlidingTabLayout/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.3.0_29901bfcc95cb987589b3d4d6955ad255386c72d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/HDD/Project/Project Android/Library/My Lib/SlidingTabLayout/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5cc5ef8347a6bafa14556cbd35230aa9b3431bb0">
+        <dex dex="/Volumes/HDD/Project/Project Android/Library/My Lib/SlidingTabLayout/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.3.0_b89821175d17ab08a6ea8954a0e0ebc7f74a954c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/HDD/Project/Project Android/Library/My Lib/SlidingTabLayout/app/build/intermediates/exploded-aar/SlidingTabLayout/slidingtablayout/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a9c7b7965a1b5f2d54bd082f3bd0db2849d5fca8">
+        <dex dex="/Volumes/HDD/Project/Project Android/Library/My Lib/SlidingTabLayout/app/build/intermediates/pre-dexed/debug/SlidingTabLayout-slidingtablayout-unspecified_06da51ce4f4c1a97b129f94ea2c9347a1bbecf57.jar" />
     </item>
 
 </items>
