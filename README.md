@@ -52,7 +52,7 @@ Add this to your module's `build.gradle` file:
 
 ```gradle
 dependencies {
-	compile 'com.github.ATHBK:SlidingTabLayout:v1.1.1'
+	compile 'com.github.ATHBK:SlidingTabLayout:v1.2.0'
 }
 ```
 
@@ -102,6 +102,8 @@ There are several other attributes that can be used to configure color text, ico
 | tab_background         | customer background tab|reference|
 |update v1.1:                                               |
 |tab_orientation	 | vertical or horizontal |enum     |
+|update v1.2.0:                                             |
+|tab_icon_position	 |top, bottom, left, right|enum     |
 
 2. With SlidingTabLayout:
 
@@ -119,7 +121,8 @@ There are several other attributes that can be used to configure color text, ico
 | sl_tab_background         | customer background tab|reference|
 |update v1.1:                                                  |
 |sl_orientation	            | vertical or horizontal |   enum  |
-
+|update v1.2.0:                                                |
+|sl_icon_position	    |top, bottom, left, right|enum     |
 ---
 
 # Init from Java
