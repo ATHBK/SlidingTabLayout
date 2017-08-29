@@ -1,3 +1,5 @@
+**** NOTE : DEPRECATED : libary not support and deprecated. Please to use new libary here : https://github.com/ATHBK/UltimateTabLayout
+
 # SlidingTabLayout for ViewPager
 SlidingTabLayout is a library that allows you to create a tab of viewpager with 2 style: 
 - SlidingTab
